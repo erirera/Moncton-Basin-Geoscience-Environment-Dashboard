@@ -1,6 +1,6 @@
 # Simple Moncton Basin Geoscience & Environment Dashboard 🗺️⛏️
 
-**An interactive geospatial dashboard mapping the intersection of geological resources and environmental projects in the Moncton Sub-basin, New Brunswick.**
+**An interactive map and analytics dashboard that bridges the gap between natural geological features and ongoing environmental regulatory projects in the Moncton Sub-basin, New Brunswick.**
 
 
 ## 📖 Overview
