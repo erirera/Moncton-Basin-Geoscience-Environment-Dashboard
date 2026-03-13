@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moncton Basin Geoscience & EIA Dashboard</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app" class="dashboard-container">
+      <header class="dashboard-header">
+        <h1>Moncton Basin Geoscience & EIA Dashboard</h1>
+        <p>Combining Geoscience Data with Regulatory Frameworks</p>
+      </header>
+      
+      <main class="dashboard-main">
+        <aside class="dashboard-sidebar glass-panel">
+          <section class="filter-section">
+            <h3>Filters</h3>
+            <div class="filter-group">
+              <label>Data Type</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" id="filter-geoscience" checked> Geoscience Data</label>
+                <label><input type="checkbox" id="filter-eia" checked> EIA Projects</label>
+              </div>
+            </div>
+          </section>
+
+          <section class="analytics-section">
+            <h3>Overview</h3>
+            <div class="chart-container">
+               <canvas id="eiaStatusChart"></canvas>
+            </div>
+            <div class="chart-container">
+               <canvas id="geoDataChart"></canvas>
+            </div>
+          </section>
+        </aside>
+
+        <section class="map-section glass-panel">
+          <div id="map"></div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

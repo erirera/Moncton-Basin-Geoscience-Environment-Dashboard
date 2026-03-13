@@ -1,0 +1,209 @@
+/* Base Styles */
+:root {
+  --bg-color: #0f172a;
+  --panel-bg: rgba(30, 41, 59, 0.7);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-color: #38bdf8;
+  --accent-hover: #0ea5e9;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --glass-blur: 12px;
+  
+  --color-eia: #ef4444; /* red */
+  --color-geo-borehole: #10b981; /* green */
+  --color-geo-mineral: #f59e0b; /* amber */
+  --color-geo-outcrop: #8b5cf6; /* purple */
+  --color-geo-salt: #ec4899; /* pink */
+  --color-geo-default: #3b82f6; /* blue */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling on main app */
+}
+
+/* Typography */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  background: linear-gradient(to right, var(--accent-color), #818cf8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Layout */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.dashboard-header {
+  padding: 1rem 1.5rem;
+  background: var(--panel-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-main {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.dashboard-sidebar {
+  flex: 0 0 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.map-section {
+  flex: 1;
+  padding: 0.5rem;
+  display: flex;
+}
+
+#map {
+  flex: 1;
+  border-radius: 0.75rem;
+  z-index: 1; /* Keep map below glass panels if needed */
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: var(--panel-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Forms & Filters */
+.filter-group {
+  margin-bottom: 1rem;
+}
+
+.filter-group > label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.checkbox-group label:hover {
+  color: var(--accent-color);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--accent-color);
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+/* Charts */
+.chart-container {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Map Popups Override */
+.leaflet-popup-content-wrapper {
+  background: var(--panel-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+}
+
+.leaflet-popup-tip {
+  background: var(--panel-bg);
+}
+
+.popup-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.popup-eia { color: var(--color-eia); }
+.popup-geo { color: var(--color-geo-default); }
+
+.popup-details {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.popup-details strong {
+  color: var(--text-primary);
+}
+
+/* Custom Markers */
+.custom-marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+.marker-eia { background-color: var(--color-eia); }
+.marker-geo-borehole { background-color: var(--color-geo-borehole); }
+.marker-geo-mineral { background-color: var(--color-geo-mineral); }
+.marker-geo-outcrop { background-color: var(--color-geo-outcrop); }
+.marker-geo-salt { background-color: var(--color-geo-salt); }
+.marker-geo-default { background-color: var(--color-geo-default); }
