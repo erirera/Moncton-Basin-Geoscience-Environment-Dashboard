@@ -1,11 +1,12 @@
-# Simple Moncton Basin Geoscience & Environment Dashboard 🗺️⛏️
+# Moncton Basin Geoscience & EIA Dashboard 🗺️⛏️
 
-**An interactive map and analytics dashboard that bridges the gap between natural geological features and ongoing environmental regulatory projects in the Moncton Sub-basin, New Brunswick.**
+**An interactive geospatial dashboard mapping the intersection of geological resources and regulatory frameworks in the Moncton Sub-basin, New Brunswick.**
 
+![Dashboard Preview](https://via.placeholder.com/800x450.png?text=Moncton+Basin+Dashboard+Preview) *(Replace with actual screenshot)*
 
 ## 📖 Overview
 
-The Moncton Basin Geoscience Dashboard is a dynamic web tool designed to visualize publicly available geoscience data alongside active environmental projects. By providing a comprehensive, location-based overview of regional development, this tool bridges the gap between natural geological features and ongoing environmental regulatory projects in New Brunswick.
+The Moncton Basin Geoscience Dashboard is a dynamic web tool designed to visualize publicly available geoscience data alongside active Environmental Impact Assessments (EIAs). By providing a comprehensive, location-based overview of regional development, this tool bridges the gap between natural geological features and ongoing environmental regulatory projects in New Brunswick.
 
 ## ✨ Features
 
@@ -35,7 +36,7 @@ Because this project uses vanilla HTML, CSS, and JS, **no installation or `npm` 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/erirera/moncton-dashboard.git
+   git clone https://github.com/yourusername/moncton-dashboard.git
    ```
 2. Navigate into the folder:
    ```bash
@@ -85,19 +86,20 @@ The core spatial data resides in `data.js` formatted as standard GeoJSON feature
 Contributions are welcome! If you have updated provincial data or features you'd like to add:
 
 1. Fork the project.
-2. Create your feature branch (`git checkout -b feature/AddFeature`).
-3. Commit your changes (`git commit -m 'Add some AddFeature'`).
-4. Push to the branch (`git push origin feature/AddFeature`).
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request.
 
 ## 📜 License
 
-Distributed under the CC License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🤖 Acknowledgements
-This project was built using the Antigravity Agent, an advanced AI coding assistant developed by Google DeepMind.
+
+This project was built with the assistance of the **Antigravity Agent**, an advanced AI coding assistant developed by Google DeepMind.
 
 ## 📬 Contact & Sources
 
 - **Data Sources:** New Brunswick Department of Natural Resources and Energy Development, GeoNB Open Data Portal.
-- **Project Link:** https://erirera.github.io/Moncton-Basin-Geoscience-Environment-Dashboard/
+- **Project Link:** [https://github.com/yourusername/moncton-dashboard](https://github.com/yourusername/moncton-dashboard)
