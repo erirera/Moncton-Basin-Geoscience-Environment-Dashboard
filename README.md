@@ -94,6 +94,9 @@ Contributions are welcome! If you have updated provincial data or features you'd
 
 Distributed under the CC License. See `LICENSE` for more information.
 
+## 🤖 Acknowledgements
+This project was built using the Antigravity Agent, an advanced AI coding assistant developed by Google DeepMind.
+
 ## 📬 Contact & Sources
 
 - **Data Sources:** New Brunswick Department of Natural Resources and Energy Development, GeoNB Open Data Portal.
