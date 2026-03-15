@@ -95,7 +95,7 @@ Distributed under the CC License. See `LICENSE` for more information.
 
 ## 🤖 Acknowledgements
 
-This project was built with the assistance of the **Antigravity Agent**, an advanced AI coding assistant developed by Google DeepMind.
+This project was built with the assistance of the **Antigravity Agent**, (Gemini 3.0 Pro)an advanced AI coding assistant developed by Google DeepMind.
 
 ## 📬 Contact & Sources
 
